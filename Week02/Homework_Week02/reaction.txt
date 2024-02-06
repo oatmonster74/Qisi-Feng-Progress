@@ -1,0 +1,20 @@
+5 Considerations:
+
+1.Clarify the Problem
+(What problem we want to solve when design the web?)
+
+2.Workflows and Sketches
+(A process to generate some possible critical question---like what the web will look like when errors happen?
+or any redirection)
+
+(which screens are necessary??)
+
+
+3.Feedback
+(Share code and talk about it with people to have different opinions)
+
+4.Know your tools
+(choose a comfortable tool; don't waste time on tools, save your energy on problem and its solution)
+
+5.Connect your wireframe to audience
+(different wireframes for different audience..)
