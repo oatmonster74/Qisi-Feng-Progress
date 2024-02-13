@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Intro to CSS Text and Spans</title>
+
+    <style type="text/CSS">
+       /* universal selector to zero out default margins or padding */
+        *{
+            margin:0;
+            padding:0;
+        }
+       /* tag selector applies to every insatnce of that tag*/
+        p{
+         margin-top:1rem;/* 1rem=16px */
+         margin-bottom:1rem;
+         margin-left: 0.5rem;
+         color:#FF5500 ;
+         font-family:Arial, Helvetica, sans-serif ;
+
+        }
+
+        .silly_text{
+            font-family:fantasy;
+            font-weight: 800;
+            text-decoration: underline;
+            
+        }
+
+        #really_important{
+              font-weight:600;
+              font-size:xx-large;  
+              font-style: oblique;
+              line-height: 1.5;
+              text-transform: capitalize;
+            }
+            .indented{
+                text-indent: 20%;
+            }
+
+            .align_right{
+                text-align: right;
+            }
+
+            .align_justified{
+                text-align: justify;
+            }
+
+            a{
+                color: #f0f;
+                text-decoration: none;
+            }
+    </style>
+  </head>
+  <body>
+    <h1 style="margin: 10px 20px; color:hotpink">Heading 1 Displays Block</h1>
+    <p class="align_right">
+        <span class="silly_text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis
+      justo porta, ultricies sem suscipit, hendrerit metus. Nunc aliquam tellus
+      eu tincidunt rhoncus.</span> Mauris rhoncus risus nec venenatis ultrices.
+      Vestibulum blandit laoreet enim, a aliquam neque tempor sit amet. Duis
+      varius metus vitae felis maximus sagittis. Curabitur vehicula vestibulum
+      felis et posuere. Donec scelerisque volutpat luctus.
+    </p>
+    <p id="really_important" class="align_justified">
+      Vivamus laoreet, eros quis tincidunt aliquam, orci nisl egestas lacus, sit
+      amet eleifend dolor leo ultricies enim. Nunc mauris neque, iaculis in
+      ullamcorper feugiat, rhoncus et mauris. Aenean sem sem, congue vel
+      fringilla sed, ultrices rutrum purus. quam ut placerat
+      sagittis. Mauris vitae faucibus quam, sit amet accumsan magna. Cras nec
+      tempus ligula. Pellentesque a semper arcu.
+    </p>
+    <p class="indented">
+      Maecenas a nulla et nisi tristique ultricies. Etiam ut justo lacus. Duis
+      eu mauris eu mi finibus efficitur sed vel elit. Aenean vitae varius urna.
+      Nulla maximus tincidunt ipsum, a viverra nibh. Aliquam faucibus metus id
+      ante ullamcorper fermentum. Sed laoreet ipsum erat, ut scelerisque tortor
+      dignissim sed. Etiam maximus mi nulla, efficitur volutpat urna tincidunt
+      eu. Praesent ut ligula libero.
+    </p>
+  </body>
+</html>
