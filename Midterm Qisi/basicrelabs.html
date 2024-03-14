@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Positioning Elements</title>
+ <style type="text/css">
+ 
+ .top-right-rel {
+ width: 300px;
+ height: 300px;
+ border: 2px solid #F00;
+ position: relative;
+ top: 0;
+ right: 0;
+ }
+ 
+ .top-right-abs {
+ width: 100px;
+ height: 100px;
+ border: 2px solid #0F0;
+ position: absolute;
+ top: 0;
+ right: 0;
+ }
+ 
+ .bottom-right-abs {
+ width: 300px;
+ height: 300px;
+ border: 2px solid #000;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ }
+ 
+ .bottom-right-rel {
+ width: 100px;
+ height: 100px;
+ border: 2px solid #00F;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ }
+ </style>
+</head>
+
+<body>
+ <div class="top-right-rel">This is a relative positioned div with an absolute positioned div inside.
+ <div class="top-right-abs">This is an absolute positioned div inside the relative position div.</div>
+ </div>
+ <div class="bottom-right-abs">This is an absolute positioned div with an relative positioned div inside.
+ <div class="bottom-right-rel">This is a relative positioned div inside an absolute positioned div.</div>
+ </div>
+</body>
+
+</html>
