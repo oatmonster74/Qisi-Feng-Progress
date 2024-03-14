@@ -1,0 +1,844 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    
+  }
+
+p{
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+} 
+
+
+/*Landing Page*/
+.landing_page_box {
+  margin-top: 30px;
+    
+  width: auto;
+  height: 900px;
+  position: relative;
+  background-image: url(./imgs/CoverF.png);
+}
+
+/* Logo Part*/
+
+.landing_page_logobox{
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  margin-left: 0;
+}
+
+.landing_page_logobox img{
+  max-width: 100%;
+  height: 100%;
+}
+
+.landing_page_logobox img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/*Landing Page, Navi menu*/
+
+.landing_page_navibox{
+  display: flex;
+  justify-content: space-evenly;
+  width: fit-content;
+  position: absolute;
+  width: 40%;
+  margin-top: 30px;
+  margin-left: 60%; 
+}
+
+.landing_page_navibox a{
+  font-family: "Anton",sans-serif;
+  font-size: 1.5rem;
+}
+
+.landing_page_navibox a:hover{
+  transition: ease-in 0.15s;
+  border-radius: 5px;
+  background-color: #8C8665;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+/*Headings/Texts on Landing Page*/
+
+.landing_page_h1{
+  display: inline-block;
+  position: absolute;
+  margin-left: 40px;
+  margin-top:80px ;
+  font-size: 4rem;
+  font-family: "Anton",sans-serif;
+  
+  width: fit-content;
+  height: fit-content;
+}
+
+.landing_page_h2{
+  display: inline-block;
+  position: absolute;
+  margin-left: 70px;
+  margin-top:-200px;
+  font-size: 4rem;
+  font-family: "Anton",sans-serif;
+ 
+}
+
+
+.landing_page_h3{
+  display: inline-block;
+  width: 120%;
+  position: absolute;
+  margin-left: 70px;
+  margin-top:-200px ;
+  font-size: 4rem;
+  font-family: "Anton",sans-serif;
+ 
+}
+
+
+ /*Splitter Style*/
+ .splitter{
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  height: 20px;
+  background-color: gray;
+ }
+
+ /*About Page/Section*/
+ 
+.about_page_box{
+  
+  width: auto;
+  position: relative;
+  height: 600px;
+  background-color: #f2e8df;
+}
+
+.about_img_box{
+  width: 47%;
+  height: fit-content;
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 35px;
+
+}
+
+.about_text_box{
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  margin-left: 760px;
+  margin-top: 90px;
+  text-align: justify;
+  background-color: #f2e8df;
+}
+
+.about_button{
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  margin-left: 400px;
+  background-color: #8C8665;
+  border:brown;
+  color: whitesmoke;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Anton",sans-serif;
+  font-size: medium;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  font-size: medium;
+  
+}
+
+.about_button:hover {
+  background-color: #73594F;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.about_page_sidew{
+  margin-top: 5px;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  text-align: center;
+  text-decoration: underline;
+  margin-left: 290px;
+  font-family: "Anton",sans-serif;
+}
+
+/*Concept/Slogan Page*/
+.slogan_page_box{
+  display: flex;
+  justify-content: center;
+  background-image: url('./imgs/slogandec.png');
+  width: auto;
+  height: 1200px;
+  position: relative;
+  background-color: #1A1819;
+}
+
+.slogan_page_heading{
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  margin-left: 0;
+  color: #f2e8df;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+  width: fit-content;
+  height: fit-content;
+  
+  position: relative;
+  
+}
+
+.slogan_page_subheading{
+  position: absolute;
+  margin-top: 160px;
+  color: #f2e8df;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.8rem;
+  width: fit-content;
+  
+
+}
+
+.slogan_page_pola{
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  width: 50%;
+  height: 650px;
+  position: absolute;
+  margin-left: 500px;
+  margin-top: 400px;
+  box-shadow: 0 0 20px #f2e8df;
+  border-radius: 10px;
+  color: #f2e8df;
+}
+
+.polas{
+  flex: 0 0 calc(33.33% - 10px);
+  position: relative;
+  margin-top: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 200px;
+  height: fit-content;
+  
+}
+
+.polas img{
+  width: 100%;
+  border: 12px solid #8C8665;
+  border-bottom-width: 45px;
+}
+ 
+.polas p{
+  position: absolute;
+  font-weight: bold;
+  margin-top: -40px;
+  text-align: center;
+  width: 200px;
+  color: #1A1819;
+  font-size: 1rem;
+  
+}
+
+.polas:hover{
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+/*Splitter2*/
+
+.splitter2{
+  margin-top: 0px;
+  width: 100%;
+  height: 20px;
+  background-color: gray;
+ }
+
+ /*Course Page*/
+.course_page_box{
+  position: relative;
+  width: auto;
+  height: 700px;
+  position: relative;
+  background-color: #D4C8BE;
+ }
+
+.course_page_heading{
+ position: absolute;
+ 
+ margin-top: 60px;
+ margin-left: 60px;
+ width: 30%;
+ height: 600px;
+ }
+
+.course_page_intro{
+  display: flex;
+  justify-content:flex-start;
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 600px;
+  
+  width: 50%;
+  height: 550px;
+}
+
+.course_page_lefthea{
+  
+  position: absolute;
+  margin-top: 10px;
+  width: 30%;
+  height: fit-content;
+  
+}
+
+.course_page_lefthea header {
+  background-color: #73594F;
+  margin-left: 10px;
+  width: fit-content;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.6rem;
+}
+
+.course_page_righthea{
+  margin-top: 160px;
+  
+  position: absolute;
+  margin-left: 210px;
+  
+  
+  width: 40%;
+  height: fit-content;  
+}
+
+.course_page_righthea header{
+  
+  position: absolute;
+  margin-bottom: 0;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.6rem;
+}
+
+.course_page_intro_head1{
+  margin-right: 50%;
+  position: absolute;
+  
+  margin-top: 10%;
+  background-color: #BF9B93;
+  border-radius: 10px;
+}
+
+.course_page_intro_head2{
+  margin-left: 50%;
+  position: absolute;
+  
+  margin-top: 35%;
+  background-color: #BF9B93;
+  border-radius: 10px;
+}
+
+.course_page_intro_head3{
+  margin-right: 50%;
+  position: absolute;
+  
+  margin-top: 60%;
+  background-color: #BF9B93;
+  border-radius: 10px;
+}
+
+
+.course_page_imgbox1{
+  position: absolute;
+  margin-top: 4%;
+  width: 50%;
+  margin-left: 50%;
+  height: 200px;
+  
+}
+
+.course_page_imgbox2{
+  position: absolute;
+  margin-top: 25%;
+  width: 50%;
+  margin-right: 50%;
+  height: 200px;
+  
+}
+.course_page_imgbox3{
+  position: absolute;
+  margin-top: 45%;
+  width: 50%;
+  margin-left: 50%;
+  height: 200px;
+  
+}
+
+.course_page_imgbox1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 6px solid #f2e8df;
+  border-bottom-width: 6px;
+}
+
+.course_page_imgbox2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 6px solid #f2e8df;
+  border-bottom-width: 6px;
+}
+
+.course_page_imgbox3 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 6px solid #f2e8df;
+  border-bottom-width: 6px;
+}
+
+/*Course Page Button*/
+.course_page_button{
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  margin-top: 590px;
+  margin-left: 220px;
+  background-color: #8C8665;
+  color: whitesmoke;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Anton",sans-serif;
+  font-size: 1rem;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  font-size: medium;
+  
+}
+
+.course_page_button:hover {
+  background-color: #73594F;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+/*Achievements Page*/
+
+.achievements_page_box{
+  width: auto;
+  height: 800px;
+ 
+  position: relative;
+}
+
+.achievements_page_imgbox{
+  display: flex;
+  border: 20px solid #f2e8df;
+  position: absolute;
+  width: 65%;
+  height: 800px;
+  
+}
+
+.achievements_page_fleximgs{
+  flex: 1;
+  position: relative;
+}
+
+.achievements_page_fleximgs img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.achievements_page_headbox{
+  position: absolute;
+  width: 35%;
+  height: 800px;
+  margin-left: 65%;
+  border: 20px solid #f2e8df;
+  background-color: #1A1819;
+  color: #f2e8df;
+}
+
+.achievements_page_intro{
+  position: absolute;
+  margin-top: 40%;
+  margin-left: 0;
+  text-align: center;
+}
+
+/*Add camption*/
+.achievements_page_figcamp {
+  position: absolute;
+  margin-top: -40px;
+  text-align: center;
+  
+  width: 100%;
+  
+  font-family:"Josefin Sans", sans-serif;
+  font-size: 2rem;
+  color:#D4C8BE;
+  opacity: 0; /* Hide the text by default */
+  transition: opacity 0.3s ease; /* Add a smooth transition effect */
+  z-index: 1;
+}
+
+.achievements_page_fleximgs img:hover + .achievements_page_figcamp{
+  cursor: pointer;
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/*Resources Page/Section*/
+.resources_page_box{
+  width: auto;
+  height: 1000px;
+  
+  position: relative;
+}
+
+.resources_page_imgbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+  
+  width: 100%;
+  height: 900px;
+  margin-top: 300px;
+}
+
+.resources_page_fleximgs{
+  
+  width: 200px;
+  height: 200px;
+  flex: 0 0 23%;
+
+}
+
+.resources_page_fleximgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.resources_page_fleximgs h2{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*Resource Page Heading*/
+.resources_page_heading{
+  position: absolute;
+  margin-top: 5%;
+  left: 38%;
+  font-family:'Josefin Sans', sans-serif; 
+  font-size: 1.5rem; 
+  text-align: center; 
+  
+}
+
+.resources_page_fleximgs img:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  border: 5px solid #BF9B93;
+  transition: ease-in 0.22s;
+}
+
+
+ /* Mobile Phone Sized Screens */
+ @media screen and (max-width: 768px) {
+  
+  body {
+      font-size: 14px;
+  }
+  
+  /*Revisions for Landing Page*/
+
+  .landing_page_box{
+   width: 100%;
+   height: auto;
+   background-size: cover;
+   background-position: 80%;
+   
+  }
+
+  .landing_page_logobox{
+    width: 50px;
+    height: 50px;
+  }
+
+  .landing_page_navibox{
+    width: 40%;
+    position: relative;
+    flex-wrap: wrap;
+
+  }
+
+  .landing_page_navibox a{
+    font-size: 1rem;
+  }
+
+  /*Revisions for Landing Page's Heading*/
+  .landing_page_h1{
+    position: relative;
+    
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .landing_page_h2{
+    position: relative;
+    
+    margin-top: 0;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .landing_page_h3{
+    position: relative;
+    
+    margin-left: 52px;
+    margin-top: 2px;
+    font-size: 2rem;
+    width: auto;
+    height: auto;
+  }
+
+  /*Revision for About Page*/
+  .about_page_box{
+    width: 100%;
+    
+  }
+
+  .about_img_box{
+    width: 40%;
+    margin-left: 20px;
+  }
+
+  .about_text_box{
+    margin-top: 20px;
+    width: 300px;
+    margin-left: 40%;
+    
+    
+  }
+  
+  .about_button{
+    position: relative;
+    width: 80px;
+    height: 25px;
+    margin-top: 0;
+    margin-left: 200px;
+  }
+
+  .about_page_sidew{
+    margin-left: 190px;
+  }
+
+  /*Revisions for Slogan Page*/
+
+  .slogan_page_box{
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    background-position: 2%;
+  }
+
+  .slogan_page_heading{
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+
+  .slogan_page_subheading{
+    margin-top: 100px;
+    margin-right: 0px;
+    
+  }
+
+  .slogan_page_pola{
+    
+    width: 70%;
+    height: 400px;
+   margin-left: 0;
+   margin-top: 300px;
+  }
+
+  .polas{
+    margin-top: 20px;
+    width: 150px;
+    
+  }
+
+  .polas p{
+   font-size: 0.7rem;
+   text-align: start;
+  }
+
+  /*Revisions for Course Page*/
+  .course_page_box{
+    width: 100%;
+    height: 1000px;
+  }
+
+  .course_page_heading{
+    
+    margin-left: 0px;
+  }
+
+  .course_page_lefthea {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .course_page_righthea {
+    margin-top: 315px;
+    margin-left: 10px;
+  }
+
+  .course_page_lefthea header{
+  font-size: 1.5rem;
+  }
+
+  .course_page_righthea header{
+    font-size: 1.5rem;
+    }
+  
+  .course_page_button{
+    margin-top:620px ;
+    margin-left: 20px;
+  }
+
+  /*Course Intro Section*/
+  .course_page_intro{
+    width: 60%;
+    margin-top: 20%;
+    margin-left: 37%;
+  }
+
+  .course_page_intro_head1{
+    margin-top: 100px;
+    margin-left: 225px;
+  }
+
+  .course_page_imgbox1{
+    margin-top: 0px;
+    margin-left: -44px;
+    width: 80%;
+  }
+
+  .course_page_intro_head2{
+    
+    margin-top: 360px;
+    margin-left:-128px;
+  }
+
+  .course_page_imgbox2{
+    margin-top: 220px;
+    margin-left: 70px;
+    width: 80%;
+  }
+
+  .course_page_intro_head3{
+    
+    margin-top: 530px;
+    margin-left:225px;
+  }
+
+  .course_page_imgbox3{
+    margin-top: 440px;
+    margin-left: -44px;
+    width: 80%;
+  }
+
+  /*Revision for Achievements Page*/
+  .achievements_page_box{
+    width: 100%;
+    
+  }
+
+  .achievements_page_imgbox{
+    width: 60%;
+    height: 700px;
+  }
+
+  .achievements_page_headbox{
+    width: 40%;
+    margin-left: 60%;
+    font-size: 1rem;
+    border: 15px solid #f2e8df;
+    height: 700px;
+  }
+
+  .achievements_page_intro{
+    font-size: 1rem;
+  }
+
+  .achievements_page_headbox h1{
+    font-size: 1.5rem;
+  }
+
+  .achievements_page_figcamp{
+    font-size: 1rem;
+  }
+
+  /*Revision for Resources Page*/
+
+  .resources_page_box{
+    width: 100%;
+  }
+
+  .resources_page_imgbox{
+    width: 100%;
+    height: 900px;
+  }
+
+  .resources_page_fleximgs{
+    width: 100px;
+    height: 100px;
+  }
+
+  .resources_page_fleximgs h2{
+    font-size: 1rem;
+  }
+
+  
+
+
+}
