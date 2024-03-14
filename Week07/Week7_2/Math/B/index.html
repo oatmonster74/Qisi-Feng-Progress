@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS Math Methods</title>
+    <script type="text/javascript">
+      // Integers :whole number
+      var x= 15; 
+      var y =35; 
+      var z;
+      z=10
+
+
+      //addition
+      console.log(x+y)
+      //subtraction
+      console.log(x-y)
+      //pro
+      console.log(x*y)
+      //division
+      console.log(x/y)
+
+      //modular operator % return the division remainder
+      console.log(10%3)
+
+      //Order of opeartions matters
+      console.log((x+y)*y -1)
+
+
+      //increments
+      //x++
+
+      //increments
+      //x--
+
+      //increment by a certain number
+      //x+=2
+      //x-=2
+
+      //floating point numbers and some basic math functions
+      var k=2.25
+      //Math.floor will round down to the neartst integer
+      var kDown=Math.floor(k)
+      console.log(kDown)
+      //Math.ceil will round up to the nearst integers
+      var kUp=Math.ceil(k)
+      console.log(kUp)
+      //Math.round will round up or down based on the decimal
+      var num1=2.2
+      var num2=2.7
+      console.log(Math.round(num1))
+      console.log(Math.round(num2))
+
+      //Math.random() returns a floating point number between 0 and 1
+      console.log(Math.random())
+
+      //We can use Math.random() and Math.round() to get the whole number 0 or 1
+      // for a true/false boolean situation
+
+      var yn=Math.round(Math.random()) // returns either 0 or 1 
+
+      if (yn === 0){
+        console.log('false')
+      }else{
+        console.log('true')
+      }
+
+      // Random number between 0 and n
+      // We are going to need a function that takes a parameter that we 
+      //can change each time we call this function
+
+      function randNum(n){
+       //When we declare a variable inside function, that variable is not accessible aka it dies outside of funciton
+       var rn=Math.round(n*Math.random())
+       console.log(rn)
+      }
+     
+
+      //This is super useful when you want to grab a random item from an array
+      randNum(15)
+      
+      //test is global but we will assign it a value with our range function
+      //var test
+
+      function randNumRange(min,max){
+        var rn=Math.round(Math.random()*(max-min)+min)
+        //test=rn
+        //return a value from our function
+        return rn
+      }
+      
+      var rand1=randNumRange(20,30)
+      var rand2=randNumRange(50,60)
+      console.log('On the fly, no var:'+ randNumRange(35,45))
+      console.log(rand1,rand2)
+      //randNumRange(20,30)
+      //console.log(test)
+    </script>
+  </head>
+  <body></body>
+</html>
