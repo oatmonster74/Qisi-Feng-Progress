@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    
   }
 
 p{
@@ -12,9 +11,9 @@ p{
 
 
 /*Landing Page*/
+
 .landing_page_box {
   margin-top: 30px;
-    
   width: auto;
   height: 900px;
   position: relative;
@@ -75,7 +74,6 @@ p{
   margin-top:80px ;
   font-size: 4rem;
   font-family: "Anton",sans-serif;
-  
   width: fit-content;
   height: fit-content;
 }
@@ -87,7 +85,6 @@ p{
   margin-top:-200px;
   font-size: 4rem;
   font-family: "Anton",sans-serif;
- 
 }
 
 
@@ -99,9 +96,7 @@ p{
   margin-top:-200px ;
   font-size: 4rem;
   font-family: "Anton",sans-serif;
- 
 }
-
 
  /*Splitter Style*/
  .splitter{
@@ -115,7 +110,6 @@ p{
  /*About Page/Section*/
  
 .about_page_box{
-  
   width: auto;
   position: relative;
   height: 600px;
@@ -128,7 +122,6 @@ p{
   position: absolute;
   margin-top: 70px;
   margin-left: 35px;
-
 }
 
 .about_text_box{
@@ -158,7 +151,6 @@ p{
   transition-duration: 0.3s;
   cursor: pointer;
   font-size: medium;
-  
 }
 
 .about_button:hover {
@@ -198,9 +190,7 @@ p{
   font-size: 3rem;
   width: fit-content;
   height: fit-content;
-  
   position: relative;
-  
 }
 
 .slogan_page_subheading{
@@ -210,8 +200,6 @@ p{
   font-family: 'Josefin Sans', sans-serif;
   font-size: 0.8rem;
   width: fit-content;
-  
-
 }
 
 .slogan_page_pola{
@@ -238,7 +226,6 @@ p{
   margin-right: 5px;
   width: 200px;
   height: fit-content;
-  
 }
 
 .polas img{
@@ -255,7 +242,6 @@ p{
   width: 200px;
   color: #1A1819;
   font-size: 1rem;
-  
 }
 
 .polas:hover{
@@ -283,7 +269,6 @@ p{
 
 .course_page_heading{
  position: absolute;
- 
  margin-top: 60px;
  margin-left: 60px;
  width: 30%;
@@ -296,18 +281,15 @@ p{
   position: absolute;
   margin-top: 60px;
   margin-left: 600px;
-  
   width: 50%;
   height: 550px;
 }
 
 .course_page_lefthea{
-  
   position: absolute;
   margin-top: 10px;
   width: 30%;
   height: fit-content;
-  
 }
 
 .course_page_lefthea header {
@@ -322,17 +304,13 @@ p{
 
 .course_page_righthea{
   margin-top: 160px;
-  
   position: absolute;
   margin-left: 210px;
-  
-  
   width: 40%;
   height: fit-content;  
 }
 
 .course_page_righthea header{
-  
   position: absolute;
   margin-bottom: 0;
   writing-mode: vertical-lr;
@@ -344,7 +322,6 @@ p{
 .course_page_intro_head1{
   margin-right: 50%;
   position: absolute;
-  
   margin-top: 10%;
   background-color: #BF9B93;
   border-radius: 10px;
@@ -353,7 +330,6 @@ p{
 .course_page_intro_head2{
   margin-left: 50%;
   position: absolute;
-  
   margin-top: 35%;
   background-color: #BF9B93;
   border-radius: 10px;
@@ -362,7 +338,6 @@ p{
 .course_page_intro_head3{
   margin-right: 50%;
   position: absolute;
-  
   margin-top: 60%;
   background-color: #BF9B93;
   border-radius: 10px;
@@ -375,7 +350,6 @@ p{
   width: 50%;
   margin-left: 50%;
   height: 200px;
-  
 }
 
 .course_page_imgbox2{
@@ -384,15 +358,14 @@ p{
   width: 50%;
   margin-right: 50%;
   height: 200px;
-  
 }
+
 .course_page_imgbox3{
   position: absolute;
   margin-top: 45%;
   width: 50%;
   margin-left: 50%;
   height: 200px;
-  
 }
 
 .course_page_imgbox1 img{
@@ -437,7 +410,6 @@ p{
   transition-duration: 0.3s;
   cursor: pointer;
   font-size: medium;
-  
 }
 
 .course_page_button:hover {
@@ -450,7 +422,6 @@ p{
 .achievements_page_box{
   width: auto;
   height: 800px;
- 
   position: relative;
 }
 
@@ -460,7 +431,6 @@ p{
   position: absolute;
   width: 65%;
   height: 800px;
-  
 }
 
 .achievements_page_fleximgs{
@@ -473,8 +443,6 @@ p{
   height: 100%;
   object-fit: cover;
 }
-
-
 
 .achievements_page_headbox{
   position: absolute;
@@ -493,19 +461,17 @@ p{
   text-align: center;
 }
 
-/*Add camption*/
+/*Add transition camption*/
 .achievements_page_figcamp {
   position: absolute;
   margin-top: -40px;
   text-align: center;
-  
   width: 100%;
-  
   font-family:"Josefin Sans", sans-serif;
   font-size: 2rem;
   color:#D4C8BE;
-  opacity: 0; /* Hide the text by default */
-  transition: opacity 0.3s ease; /* Add a smooth transition effect */
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
   z-index: 1;
 }
 
@@ -519,7 +485,6 @@ p{
 .resources_page_box{
   width: auto;
   height: 1000px;
-  
   position: relative;
 }
 
@@ -529,18 +494,15 @@ p{
   justify-content: space-between;
   flex-wrap: wrap;
   position: absolute;
-  
   width: 100%;
   height: 900px;
   margin-top: 300px;
 }
 
 .resources_page_fleximgs{
-  
   width: 200px;
   height: 200px;
   flex: 0 0 23%;
-
 }
 
 .resources_page_fleximgs img {
@@ -564,7 +526,6 @@ p{
   font-family:'Josefin Sans', sans-serif; 
   font-size: 1.5rem; 
   text-align: center; 
-  
 }
 
 .resources_page_fleximgs img:hover{
@@ -589,7 +550,6 @@ p{
    height: auto;
    background-size: cover;
    background-position: 80%;
-   
   }
 
   .landing_page_logobox{
@@ -601,7 +561,6 @@ p{
     width: 40%;
     position: relative;
     flex-wrap: wrap;
-
   }
 
   .landing_page_navibox a{
@@ -611,28 +570,23 @@ p{
   /*Revisions for Landing Page's Heading*/
   .landing_page_h1{
     position: relative;
-    
     margin-left: 10px;
     margin-top: 30px;
     font-size: 2rem;
     width: 100%;
     height: 100%;
-    
   }
 
   .landing_page_h2{
     position: relative;
-    
     margin-top: 0;
     font-size: 2rem;
     width: 100%;
     height: 100%;
-    
   }
 
   .landing_page_h3{
     position: relative;
-    
     margin-left: 52px;
     margin-top: 2px;
     font-size: 2rem;
@@ -643,7 +597,6 @@ p{
   /*Revision for About Page*/
   .about_page_box{
     width: 100%;
-    
   }
 
   .about_img_box{
@@ -655,8 +608,6 @@ p{
     margin-top: 20px;
     width: 300px;
     margin-left: 40%;
-    
-    
   }
   
   .about_button{
@@ -689,21 +640,18 @@ p{
   .slogan_page_subheading{
     margin-top: 100px;
     margin-right: 0px;
-    
   }
 
   .slogan_page_pola{
-    
     width: 70%;
     height: 400px;
-   margin-left: 0;
-   margin-top: 300px;
+    margin-left: 0;
+    margin-top: 300px;
   }
 
   .polas{
     margin-top: 20px;
     width: 150px;
-    
   }
 
   .polas p{
@@ -718,7 +666,6 @@ p{
   }
 
   .course_page_heading{
-    
     margin-left: 0px;
   }
 
@@ -733,12 +680,12 @@ p{
   }
 
   .course_page_lefthea header{
-  font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .course_page_righthea header{
     font-size: 1.5rem;
-    }
+  }
   
   .course_page_button{
     margin-top:620px ;
@@ -764,7 +711,6 @@ p{
   }
 
   .course_page_intro_head2{
-    
     margin-top: 360px;
     margin-left:-128px;
   }
@@ -776,7 +722,6 @@ p{
   }
 
   .course_page_intro_head3{
-    
     margin-top: 530px;
     margin-left:225px;
   }
@@ -790,7 +735,6 @@ p{
   /*Revision for Achievements Page*/
   .achievements_page_box{
     width: 100%;
-    
   }
 
   .achievements_page_imgbox{
@@ -837,8 +781,5 @@ p{
   .resources_page_fleximgs h2{
     font-size: 1rem;
   }
-
-  
-
 
 }
