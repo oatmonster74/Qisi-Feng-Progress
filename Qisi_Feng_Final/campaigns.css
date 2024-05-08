@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    /* padding: 0; */
+  }
+
+  p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+  } 
+
+  /* Bootstrap and Override */
+  .carousel-indicators [data-bs-target] {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-indent: 0;
+    color: #f2f2f2;
+  }
+
+  .carousel-caption h4 {
+    text-transform: lowercase;
+    color: #B7ADA2;
+    font-family: "Anton",sans-serif;
+    font-size: 2rem;
+  }
+
+  .carousel-caption p {
+    font-style: italic;
+  }
+
+  /* heading */
+  .campaigns_page_heading{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.campaigns_page_heading h1{
+  font-family: "Anton",sans-serif;
+  font-size: 5rem;
+  color: #f2f2f2;
+}
+
+.far {
+  color: #000000;
+  font-size: 1rem;
+}
+
+.fa-eye{
+  color: #000000;
+  font-size: 1rem;
+}
+
+/* Mobile Phone Sized Screens */
+@media screen and (max-width: 768px) {
+  
+  body {
+      font-size: 14px;
+  }
+
+ .carousel-caption{
+  /* This is the priority--to override bootstrap CSS property */
+  display: block !important; 
+ }
+}
+
+

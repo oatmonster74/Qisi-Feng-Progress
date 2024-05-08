@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FuZhengGangSuperModelTrainingCamp</title>
+    <link rel="stylesheet" type="text/css" href="Final.css" />
+    <!--FONT 1 Anton-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<!--FONT 2 Truculenta-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+<!--FONT 3-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+<!--FONT 4-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+<!--FONT 5 Montserrat-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+
+<!-- Loading Font Awesome -->
+<script src="https://kit.fontawesome.com/b2337e9188.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+<!-- Landing Page-->
+
+<div class="landing_page_box" id="lpbox"> <!--This lpbox id is for GSAP calling!-->
+    <!--BG IMAGE-->
+    <div class="landing_page_bgimage">
+      <img src="./Cover_GIF.gif">
+    </div>
+
+    <!--Logo-->
+    <div class="landing_page_logobox">
+      <a href="#">
+        <img src="./imgs/translogo.png" alt="LOGO" >
+      </a>
+    </div>
+
+    <!--Navi Menu-->
+    <div class="landing_page_navibox">
+    <a href="#lpabout">ABOUT</a>
+    <a href="#lpcourse" >COURSES</a>
+    <a href="#lpachievement" >ACHIEVEMENTS</a>
+    <a href="#lpresource" >RESOURCES</a>
+    <a href="#lpcontact" >CONTACT</a>
+  
+    </div>
+
+    <!--Heading on Landing Page-->
+    <!--This lph class name is for GSAP calling!-->
+
+    <div class="landing_page_h1 lph"><h1>FU ZHENG GANG</h1> 
+      <div class="landing_page_h2 lph"><h1>SUPERMODEL</h1>
+        <div class="landing_page_h3 lph"><h1>TRAINING CAMP</h1></div>
+      </div>
+    </div> 
+
+    <!-- A guiding section -->
+    <div class="landing_page_guidingbox">
+      <div class="lp_guidingtext"><h3>Explore beyond</h3></div>
+      <i class='fas fa-arrow-down'></i>
+    </div>
+
+
+    
+    
+
+</div> 
+
+<!--Here comes the About Page-->
+
+<div class="about_page_box" id="lpabout"> <!--This lpabout id is for viewport scrolling!-->
+
+  <!-- Heading -->
+  <div class="about_page_heading"><h1>Who We Are</h1></div>
+<!--Imagebox-->
+<div class="about_img_box">
+  <img src="./imgs/About1.png" style="max-width: 100%; max-height: 100%;"/>
+
+</div>
+
+ <!--Textbox-->
+ <div class="about_text_box" id="about_text_box">
+  <header>
+    <h1 style="font-family: 'Anton', sans-serif; font-size: 1.5rem">Story Begins..</h1>
+  </header>
+
+ <p id="story">Zhenggang Fu 
+  was once one of China's top male models and one of the first models to travel abroad to participate in four major international fashion weeks. 
+  He has profound, unique insight and rich professional knowledge of the fashion industry. 
+  In line with the "talent scouting and talent cultivation" of the heart, 
+  he founded the model training camp brand of the same name in 2015 and thus 
+  discovered many excellent "new blood in the fashion industry" who have achieved a lot internationally.</p>
+
+  <!--ADD a BUTTON-->
+  <div class="about_button" id="about_button">></div>
+  <div class="about_page_sidew">Learn More</div>
+</div>
+
+
+</div>
+
+<!--Here come the Slogan/Concept Page-->
+<div class="slogan_page_box">
+
+  <!--Add a switch-->
+  <div class="slogan_page_switch" onclick="switchImgs()">
+    <div class="switch_line"></div>
+  </div>
+
+  <!--Slogan Page Heading-->
+  <div class="slogan_page_heading">
+    <h1>Our Philosophy</h1>
+    
+    <!--Subheading-->
+    <div class="slogan_page_subheading">
+      <h2>"Take Every Dream Seriously."</h2>
+    </div>
+  </div>
+
+ <!--Slogan Page Polaroid Place-->
+ <div class="slogan_page_pola">
+
+ <div class="polas"><img src="./imgs/step1.jpg"/><p>1.Send your file</p></div>
+ <div class="polas"><img src="./imgs/step2.jpg"/><p>2.Take online interview</p></div>
+ <div class="polas"><img src="./imgs/step3.jpg"/><p>3.Start your training</p></div>
+ <div class="polas"><img src="./imgs/step4.jpg"/><p>4.Agencies Casting</p></div>
+ <div class="polas"><img src="./imgs/step5.jpg"/><p>5.Sign with agency <br> who <em>LOVES </em> you</p></div>
+ <div class="polas"><img src="./imgs/step6.jpg"/><p>6.Begin your journey</p></div>
+
+ </div>
+
+
+</div>
+ 
+ <!--Splitter-->
+ <div class="splitter2"></div>
+
+
+<!--Here comes the Courses Page-->
+<div class="course_page_box" id="lpcourse"> <!--This lpcourse id is for viewport scrolling!-->
+
+  <!--Heading-->
+  <div class="course_page_heading">
+  <div class="course_page_lefthea">
+  <header>
+    <h1>Course</h1>
+  </header>
+  </div>
+
+  <div class="course_page_righthea">
+    <header>
+      <h1>Intro</h1>
+    </header>
+
+  </div>
+  </div>
+
+  <!-- End Heading -->
+  
+
+  <!-- Here comes the two types of courses -->
+  <div class="course_page_courses">
+
+    <!-- Type1 -->
+    <div class="type1">
+      <div class="type1_img"><img src="./imgs/Pro2.jpg">
+        <i class="fas fa-sort-down"></i>
+    <h2>High-Fashion 21Ds TS</h2>
+    <p>
+      <ul>
+        <li>21 Days Training Session</li>
+        <li>High-intensity Training</li>
+        <li>Cat-Walk Focus</li>
+        <li>Magazine Shooting</li>
+        <li>Mainly for High-Fashion Direction</li>
+        <li>Mainly Worktype: Runway/Campaign/Editorial </li>
+      </ul>
+    </p>
+    </div>
+    </div>
+
+    <!-- Type2 -->
+    <div class="type2">
+      <div class="type2_img"><img src="./imgs/type2.JPG">
+        <i class="fas fa-sort-down"></i>
+        <h2>Commercial 14Ds TS</h2>
+        <p>
+          <ul>
+            <li>14 Days Training Session</li>
+            <li>High-intensity Training</li>
+            <li>Shooting Focus</li>
+            <li>Practice Shooting with Real Brands</li>
+            <li>Mainly for Commercial Direction</li>
+            <li>Mainly Worktype: E-commerce</li>
+          </ul>
+        </p>
+        </div>
+      
+    </div>
+    
+  </div>
+
+  </div>
+
+
+<!--Here Comes the Achievements Page-->
+<div class="achievements_page_box" id="lpachievement"> <!--This lpachievement id is for viewport scrolling!-->
+  
+  <!--Place imgs-->
+  <div class="achievements_page_imgbox">
+  <div class="achievements_page_fleximgs">
+    <img src="./imgs/show2.jpg" >
+  
+    <div class="achievements_page_figcamp" id="achshow">Shows</div>
+  </div>
+  <div class="achievements_page_fleximgs">
+    <img src="./imgs/Mag2.jpg" >
+    <div class="achievements_page_figcamp"  id="achmaga">Magazines</div>
+  </div>
+  <div class="achievements_page_fleximgs">
+    <img src="./imgs/Cam2.jpg">
+    <div class="achievements_page_figcamp"  id="achcamp">Campaigns</div>
+  </div>
+
+
+  </div>
+
+  <div class="achievements_page_headbox" style="font-family: 'Anton', sans-serif; font-size: 1.8rem; text-align: center;" >
+  <h1 style="margin-top: 150px;">Our Achievements</h1>
+  <p class="achievements_page_intro">"Our outstanding students are active on stages around the world.They worked with
+     lots of top brands like Jil Sander, Prada, Louis Vuitton etc. They have made their names in this industry.
+  </p>
+  
+  </div>
+
+  <!-- One more guiding -->
+  <div class="achievements_page_guiding">
+    <p style="font-size: 1rem; text-decoration: underline;">
+      <em><i class="fas fa-angle-left"></i></em>
+      Click IMG Below to Drive!</p>
+    </div>
+
+</div>
+
+ <!--Splitter-->
+ <div class="splitter2"></div>
+
+<!-- Here Comes Our Resources Section -->
+
+<div class="resources_pagebox" id="lpresource">  <!--This lpresource id is for viewport scrolling!-->
+<div class="resources_page_heading"><h1>Our Resources</h1></div>
+
+<!-- Pic1 -->
+<section class="R1">
+  <div class="R1_box">
+    <div class="R1_text">
+      <p>Five-Star Hotel Accomodation</p>
+    </div>
+  </div>
+  <!-- Image goes here -->
+  <img class="R1_img" src="./imgs/En1.jpg"/>
+</section>
+
+<!-- Pic2 -->
+<section class="R2">
+  <div class="R2_box">
+    <div class="R2_text">
+      <p>Professional Experts</p>
+    </div>
+  </div>
+
+  <!-- Image goes here -->
+  <img class="R2_img" src="./imgs/profe1.jpg"/>
+</section>
+
+<!-- Pic3 -->
+
+<section class="R3">
+  <div class="R3_box">
+    <div class="R3_text">
+      <p>Brands Sponsorship</p>
+    </div>
+  </div>
+
+  <!-- Image goes here -->
+  <img class="R3_img" src="./imgs/brandsponsor.jpg"/>
+</section>
+
+<div class="contact_pagebox" id="lpcontact"> <!--This lpcontact id is for viewport scrolling!-->
+  <div class="contact_pagebox_heading"><h1>Connection is EVERYTHING</h1></div>
+  <div class="contact_page_arrow"><i class="fas fa-arrow-down"></i></div>
+
+  <div class="email"><h2>anywaytomorrowisanotherday@gmail.com</h2></div>
+
+</div>
+
+
+
+
+</div>
+
+
+
+<!--Java Places-->
+
+<!--Load GSAP Library-->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<!-- Plugin -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+
+<!--Add an external js file only for GSAP-->
+<script src="gsap.js">
+</script>
+
+<!--Normal JS File-->
+<script type="text/javascript">
+
+//make a function to change background color
+
+function aboutBgcChange(){
+
+var colorChoice = ["#613832", "#C8BEB5","#4C302F", "#A96E70", "#A59886"];
+
+document.querySelector(".about_page_box").addEventListener(
+
+  //on
+   "mouseover", function () {
+
+    document.querySelector(".about_page_box").style.backgroundColor
+    = colorChoice[(Math.floor(Math.random() * colorChoice.length))];
+  });
+
+    //out
+  document.querySelector(".about_page_box").addEventListener(
+    
+    "mouseout", function(){
+    document.querySelector(".about_page_box").style.backgroundColor
+    ="#f2e8df"
+    });
+
+}
+
+  //call it
+  //setInterval(aboutBgcChange,1000)
+  aboutBgcChange();
+
+  //change background image when come to slogan page--switch
+
+  //Make switch default shut but OUTSIDE!!
+
+  let clicked=false;
+
+  //Customized function to change bg img
+
+  function switchImgs(){
+    
+    if(!clicked){
+    
+    document.querySelector(".slogan_page_box").style.backgroundImage="url('./imgs/open.png')";
+    document.querySelector(".slogan_page_pola").classList.add('showstep');
+    document.querySelector(".slogan_page_heading").classList.add('hide_mobile');
+    document.querySelector(".slogan_page_switch").classList.add('new_switch_place');
+    
+  } else {
+    document.querySelector(".slogan_page_box").style.backgroundImage="url('./imgs/Sloganbg.gif')";
+    document.querySelector(".slogan_page_pola").classList.remove('showstep');
+    document.querySelector(".slogan_page_heading").classList.remove('hide_mobile');
+    document.querySelector(".slogan_page_switch").classList.remove('new_switch_place');
+    
+  }
+
+  clicked = !clicked;
+   
+  }
+
+  //In landing page, when click indicated nav, go to associated section
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+    });
+});
+
+  
+  //Create mouse cursor effect when moving!
+  //use e to include info like vertical or horizontal cordinates about mousemoving
+  document.addEventListener('mousemove',function(e){
+
+  // Create a new star element
+  const star = document.createElement('div');
+  star.classList.add('landing_page_stars');
+
+  // Random colors for the star
+  // For hexadecimal notation
+  const starcolor = '#' + Math.floor(Math.random()*16777215).toString(16); //For example, #506266, to connect # 
+  //with random hexadecimal color to combine all possibilities
+  star.style.backgroundColor = starcolor;
+
+  // Set the position of the star element to the current mouse location
+  star.style.left = e.pageX + 'px'; 
+  star.style.top = e.pageY + 'px';
+
+  // Append the star element to the body
+  document.body.appendChild(star);
+
+  // After 2 seconds, remove star
+  setTimeout(() => {
+  star.remove();
+  }, 200);
+
+});
+
+ 
+
+  //Making about page's button functional
+  const abpbutton=document.getElementById('about_button');
+  // Add a click event listener to the button
+  abpbutton.addEventListener('click', function() {
+  // Change the page's URL to the desired destination
+  window.location.href = 'aboutpage.html'
+  });
+
+
+  //Make shows text functional
+  const achshowbtn=document.getElementById('achshow');
+  //Add click event
+    achshowbtn.addEventListener('click',function(){
+      window.location.href='shows.html'
+    });
+
+    //Make magazines text functional
+  const achmagazinebtn=document.getElementById('achmaga');
+  //Add click event
+    achmagazinebtn.addEventListener('click',function(){
+      window.location.href='magazines.html'
+    });
+
+    //Make campaigns text functional
+  const achcampaignsbtn=document.getElementById('achcamp');
+  //Add click event
+    achcampaignsbtn.addEventListener('click',function(){
+      window.location.href='campaigns.html'
+    });
+
+    //Make Guiding box on the landing page to appear with the scroll
+    window.addEventListener('scroll',function(){
+
+      const lpdesiredpos=window.scrollY;
+      const lpwinheight=window.innerHeight;
+      const guidingboxheight=document.body.clientHeight;
+
+      // specific input
+      if (lpdesiredpos > lpwinheight / 4) {
+      document.querySelector('.landing_page_guidingbox').classList.add('show');
+    } else {
+      document.querySelector('.landing_page_guidingbox').classList.remove('show');
+    }
+  });
+
+
+</script>
+  
+ </body>
+  </html>

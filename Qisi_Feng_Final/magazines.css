@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+  } 
+
+  h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+  }
+
+.ext_magazines_page_section1{
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid blue; */
+    background-image: url(magabg.JPG);
+    position: relative;
+}
+
+.ext_magazines_page_headingfirst{
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    /* border: 2px solid yellow; */
+}
+
+.ext_magazines_page_headingfirst h1{
+    font-size: 20rem;
+    font-family: "Anton",sans-serif;
+    line-height: 1;
+    /* overflow: hidden; */
+}
+
+.ext_magazines_page_headingsecond{
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    /* border: 2px solid red; */
+    bottom: 0;
+    right: 0;
+    text-align: left;
+}
+
+.ext_magazines_page_headingsecond h1{
+    width: 100%;
+    height: 100%;
+    font-size: 20rem;
+    font-family: "Anton",sans-serif;
+    line-height: 1;
+    text-align: right;
+}
+
+.ext_magazines_page_gif1{
+    position: absolute;
+    /* border: 2px solid greenyellow; */
+    width: 50vw;
+    height: 50vh;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ext_magazines_page_gif1 img{
+    width: 90%;
+    height: 90%;
+    opacity: 0;
+}
+
+.ext_magazines_page_gif2{
+    position: absolute;
+    /* border: 2px solid pink; */
+    width: 50vw;
+    height: 50vh;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ext_magazines_page_gif2 img{
+    width: 90%;
+    height: 90%;
+    opacity: 0;
+}
+
+.ext_magazines_page_gif1 img:hover{
+    opacity: 1;
+    transition: 0.7s ease-in-out;
+}
+
+.ext_magazines_page_gif2 img:hover{
+    opacity: 1;
+    transition: 0.7s ease-in-out;
+}
+
+.ext_magazines_pages_guiding{
+    position: absolute;
+    bottom: 10px;
+    left: 508.48px;
+}
+
+.ext_magazines_pages_guiding h2{
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    color: yellow;
+}
+
+/* Section 2 */
+
+.ext_magazines_page_section2{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    /* border: 2px solid yellowgreen; */
+    background-image: url(wallbg.JPG)
+    
+}
+
+.ext_magazines_page_HAObox{
+    position:absolute;
+    top: 20px;
+    left: 70px;
+    display: grid;
+    width:60vw;
+    height: 900px;
+    grid-template-columns: repeat(2, calc(70vw/3));
+    grid-template-rows: repeat(2,320px);
+    gap: 20px;
+}
+
+
+.HAOs img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* border: 4px solid rgba(255, 255, 255, 0.5) */
+}
+
+.HAOtext{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.HAOtext h1{
+    font-family: "Anton",sans-serif;
+    font-size: 7rem;
+    text-align: center;
+}
+
+.HAOtext h3{
+    text-align: center;
+}
+
+/* Section3 W magazine */
+.ext_magazines_page_section3{
+    position: relative;
+    width: auto;
+    height: 700px;
+    /* background-image: url(wallbg.JPG); */
+    background-color:#ed0c86 ;
+}
+
+ .ext_magazines_page_Wbox{
+    position:absolute;
+    width: 50%;
+    right: 0;
+    height: 100%;
+    float: left;
+    transition: z-index 0.3s;
+} 
+
+
+.ext_magazines_page_Wbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* border: 20px solid bisque */
+}
+
+.Wtext{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.Wtext h1{
+    font-size: 8rem;
+    font-family: "Anton",sans-serif;
+    text-align: center;
+}
+
+.Wtext h3{
+    text-align: center;
+}
+
+/* for W2 */
+#W1{
+    position: absolute;
+    width: 50%;
+    right: -20px;
+    height: 100%;
+}
+#W2{
+    position: absolute;
+    width: 50%;
+    right: 40px;
+    height: 100%;
+}
+
+#W3{
+    position: absolute;
+    width: 50%;
+    right: 100px;
+    height: 100%;
+}
+
+.ext_magazines_page_Wbox:hover {
+    z-index: 1;
+}
+
+/* Mobile Phone Sized Screens */
+@media screen and (max-width: 768px) {
+  
+    body {
+        font-size: 14px;
+    }
+
+    .ext_magazines_page_headingfirst h1{
+        font-size: 7rem;
+        font-family: "Anton",sans-serif;
+        line-height: 1;
+        /* overflow: hidden; */
+    }
+
+    .ext_magazines_page_headingsecond h1{
+        width: 100%;
+        height: 100%;
+        font-size: 7rem;
+        font-family: "Anton",sans-serif;
+        line-height: 1;
+        text-align: right;
+    }
+
+    .ext_magazines_pages_guiding{
+        left: 250px;
+    }
+
+    .HAOtext h1{
+        font-family: "Anton",sans-serif;
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .ext_magazines_page_HAObox{
+        left: 120px;
+    }
+
+    .Wtext h1{
+        font-size: 6rem;
+        font-family: "Anton",sans-serif;
+        text-align: center;
+    }
+    
+}

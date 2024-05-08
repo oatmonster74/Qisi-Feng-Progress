@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modal Wizard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>More Components and Utilities</h1>
+    <!--Misc Utility Classes-->
+    <div class="container mt-3 p-4">
+      <div class="p-3 bg-success-subtle text-warning border border-5 border-danger rounded-5">
+        Example element with utility classes
+      </div>
+
+      <!--Chained multiple modals. with scrollable content, and a static background-->
+      <div class="container mt-5">
+        <!--Button to open the modal-->
+        <button type="button" class="btn btn-lg btn-outline-dark border-2" data-bs-toggle="modal" data-bs-target="#wizard"> Open Modal hha</button>
+
+        <!--Modal 1-->
+        <!--This is how we make a modal sstatic, static means we cannot click the bg to close the modal-->
+        <div class="modal fade" 
+        id="wizard" 
+        data-bs-backdrop="static" 
+        data-bs-keyboard="false" 
+        tabindex="-1" 
+        aria-labeledby="wizardLabel" 
+        aria-hidden="true">
+
+      <!--Modal dialog scrollable makes any overflowing text scroll within the body of the modal-->
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content border-danger rounded-0">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="wizardLabel">Step 1 Tutorial</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+          </div>
+          <div class="modal-body"><p>This is the first step hehehhehehehhehehehhehheh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis eleifend libero in rhoncus. Maecenas eu ipsum id nisl bibendum bibendum id vitae leo. Cras rutrum eleifend est eget consectetur. Vestibulum sed neque ac risus pharetra tempus. Curabitur malesuada ante sit amet metus luctus vehicula. Donec vestibulum neque id purus sollicitudin, ac tempor dui tristique. Sed bibendum odio ut commodo bibendum. Aliquam vitae convallis lacus. Praesent sollicitudin quam ac lacus tincidunt condimentum. Fusce porttitor orci mattis, pellentesque nisl non, malesuada mauris. Sed porttitor ullamcorper semper. Aenean congue cursus sem, quis rhoncus odio fringilla vel.
+
+            Praesent laoreet, urna hendrerit efficitur dictum, velit arcu pellentesque mauris, vel sollicitudin mauris turpis in erat. Ut luctus quis nulla vehicula vestibulum. Sed maximus urna in elit congue commodo. Nam lobortis mattis vestibulum. Proin non ex venenatis, interdum ante ultricies, fringilla sem. Phasellus euismod purus at erat rutrum finibus. Etiam et tortor et quam congue egestas. Curabitur vitae lorem imperdiet, egestas libero ut, ornare magna. Proin nec leo vel orci mattis mollis. Sed vestibulum ligula lacinia, porttitor diam vel, sollicitudin arcu.
+            
+            In sapien elit, fermentum sit amet varius ut, mollis eu felis. Praesent maximus, lorem et efficitur tempor, justo justo ultrices urna, at fringilla arcu mauris at dolor. Mauris mauris felis, dictum vitae mauris at, sollicitudin dictum nisl. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent efficitur convallis felis vel bibendum.
+            
+            Etiam luctus elit urna, eget lobortis velit ornare non. Integer rutrum purus in turpis vulputate, sed accumsan purus lobortis. Aliquam accumsan convallis ullamcorper. Pellentesque vitae sollicitudin ex, non blandit justo. Vivamus sollicitudin est id lorem fermentum, sit amet egestas lorem ullamcorper. Donec eleifend aliquam lorem at viverra. Cras neque enim, blandit at arcu eget, hendrerit varius purus. Curabitur eget sollicitudin dolor. Nullam in enim odio. Phasellus consectetur sed lacus a aliquet.
+            
+            Sed luctus libero massa, et ultricies nulla pharetra a. Aliquam erat volutpat. Nunc lacus nisi, pulvinar et suscipit at, vulputate non purus. Integer tincidunt tortor arcu, ac eleifend nunc consectetur non. Donec interdum velit porta lectus mollis, sit amet congue massa egestas. Sed euismod sagittis tellus, eu vulputate lectus consectetur vitae. Ut in tristique libero. Nullam eu elit non velit porta consectetur nec ut metus. Fusce fringilla nisl eu est accumsan, mattis accumsan metus condimentum. Pellentesque vel ultricies eros. Sed sodales, felis cursus eleifend hendrerit, dolor dolor pharetra ex, non malesuada lectus lectus vel diam. Phasellus id scelerisque ligula. Mauris lobortis ipsum eget neque pharetra, quis rutrum lacus elementum. Etiam facilisis tellus vel mattis pulvinar. Nunc congue, ligula ut interdum aliquet, leo nisi laoreet lorem, ut vulputate tellus elit vel quam. Cras in diam euismod, aliquam lacus eget, ullamcorper libero.
+            
+            Proin faucibus erat at tortor iaculis, a aliquet justo fermentum. Pellentesque mollis mi sit amet aliquet laoreet. Phasellus vitae mauris sed magna sollicitudin lacinia vel non diam. In ac facilisis metus. Ut ullamcorper id lacus vel ultricies. Suspendisse congue, justo eu varius blandit, nibh libero pulvinar nisl, eget auctor leo purus vehicula purus. Nulla gravida sem diam. Etiam consequat velit augue, quis iaculis urna tristique ut. Proin et ornare mi. Nam rhoncus, lacus in venenatis volutpat, leo tellus lobortis sapien, vitae molestie enim tortor et elit. Fusce dapibus rutrum mauris. Phasellus vestibulum molestie ante, ac faucibus quam dictum at. Nulla molestie nunc nibh. Maecenas non lacus eget tellus blandit dignissim et ac neque.
+            
+            Donec ut risus dapibus, mattis magna interdum, auctor quam. Proin efficitur pharetra commodo. In in lectus eget tortor porta scelerisque pretium vel nunc. In rutrum ornare massa, sed aliquet arcu. Integer ullamcorper est a blandit lacinia. Sed a justo rutrum, porttitor quam et, volutpat magna. Praesent magna erat, sollicitudin elementum nisi vitae, accumsan rhoncus enim. Morbi elementum enim at nisi convallis egestas. Aliquam eu consequat nulla. Nulla facilisi. Ut quis odio quis tortor molestie iaculis nec ac urna. Vestibulum aliquet magna in est consectetur, a maximus leo lacinia. Aliquam quis dui laoreet, tristique leo id, fermentum tortor. Mauris lobortis nec sapien a mollis.
+            
+            Praesent sed est ut turpis varius commodo dapibus eu risus. Duis bibendum magna augue, sodales blandit ligula viverra nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean imperdiet non purus et luctus. Donec lectus odio, ullamcorper vitae elementum vitae, ullamcorper non nibh. Maecenas nec vestibulum enim, eu consectetur sem. Nulla mauris est, mattis et tincidunt sit amet, interdum sit amet lacus. Integer augue nunc, vestibulum et mattis eget, accumsan eget tellus. Nunc bibendum, neque a rhoncus ultricies, justo orci efficitur enim, eu sodales erat tellus et nisi. Vestibulum mattis bibendum tincidunt.
+            
+            Donec hendrerit tempor purus non porta. Praesent euismod purus nec eros hendrerit, non sagittis libero varius. Aliquam dapibus, turpis quis elementum fermentum, velit ex venenatis leo, et vehicula odio ante ac urna. Mauris varius urna at sem bibendum, ut molestie mauris molestie. Nulla vulputate sem eget urna elementum vestibulum. Suspendisse venenatis nisi non dolor pulvinar, sed sodales massa pellentesque. Suspendisse tincidunt massa a elit dictum, vitae faucibus diam dictum. Maecenas maximus commodo metus hendrerit viverra. Nunc aliquet ac urna at tincidunt. Curabitur mi nulla, rhoncus tempor sollicitudin id, molestie a tellus. Nam at faucibus urna, nec fringilla justo. Ut non viverra urna. Sed in ornare sem, non mattis diam. In nec elit tincidunt, luctus sem eu, viverra tellus. Maecenas elementum nunc urna, ac placerat erat vehicula a. In hac habitasse platea dictumst.
+            
+            Nullam tincidunt justo finibus porta pulvinar. Duis pulvinar blandit tortor quis fermentum. Quisque lectus risus, elementum at varius sed, pulvinar ac turpis. Pellentesque vel posuere risus, et aliquet enim. In vitae turpis egestas, lobortis quam ac, fringilla enim. Cras dignissim enim eu nunc dictum, vitae tincidunt est semper. In eget quam at eros porta tempor. Fusce at nibh ipsum. Sed lacinia quam et mi imperdiet accumsan.</p></div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                Exit Tuotial
+              </button>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#wizard2">
+                Next Step
+              </button>
+            </div>
+        </div>
+      </div>
+      </div>
+
+      <!--End M1-->
+
+      <!--Start M2-->
+
+      <!--Modal 2-->
+        <!--This is how we make a modal sstatic, static means we cannot click the bg to close the modal-->
+        <div class="modal fade" 
+        id="wizard" 
+        data-bs-backdrop="static" 
+        data-bs-keyboard="false" 
+        tabindex="-1" 
+        aria-labeledby="wizardLabel" 
+        aria-hidden="true">
+
+      <!--Modal dialog scrollable makes any overflowing text scroll within the body of the modal-->
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content border-danger rounded-0">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="wizardLabel">Step 1 Tutorial</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+          </div>
+          <div class="modal-body"><p>This is the first step hehehhehehehhehehehhehheh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis eleifend libero in rhoncus. Maecenas eu ipsum id nisl bibendum bibendum id vitae leo. Cras rutrum eleifend est eget consectetur. Vestibulum sed neque ac risus pharetra tempus. Curabitur malesuada ante sit amet metus luctus vehicula. Donec vestibulum neque id purus sollicitudin, ac tempor dui tristique. Sed bibendum odio ut commodo bibendum. Aliquam vitae convallis lacus. Praesent sollicitudin quam ac lacus tincidunt condimentum. Fusce porttitor orci mattis, pellentesque nisl non, malesuada mauris. Sed porttitor ullamcorper semper. Aenean congue cursus sem, quis rhoncus odio fringilla vel.
+
+            Praesent laoreet, urna hendrerit efficitur dictum, velit arcu pellentesque mauris, vel sollicitudin mauris turpis in erat. Ut luctus quis nulla vehicula vestibulum. Sed maximus urna in elit congue commodo. Nam lobortis mattis vestibulum. Proin non ex venenatis, interdum ante ultricies, fringilla sem. Phasellus euismod purus at erat rutrum finibus. Etiam et tortor et quam congue egestas. Curabitur vitae lorem imperdiet, egestas libero ut, ornare magna. Proin nec leo vel orci mattis mollis. Sed vestibulum ligula lacinia, porttitor diam vel, sollicitudin arcu.
+            
+            In sapien elit, fermentum sit amet varius ut, mollis eu felis. Praesent maximus, lorem et efficitur tempor, justo justo ultrices urna, at fringilla arcu mauris at dolor. Mauris mauris felis, dictum vitae mauris at, sollicitudin dictum nisl. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent efficitur convallis felis vel bibendum.
+            
+            Etiam luctus elit urna, eget lobortis velit ornare non. Integer rutrum purus in turpis vulputate, sed accumsan purus lobortis. Aliquam accumsan convallis ullamcorper. Pellentesque vitae sollicitudin ex, non blandit justo. Vivamus sollicitudin est id lorem fermentum, sit amet egestas lorem ullamcorper. Donec eleifend aliquam lorem at viverra. Cras neque enim, blandit at arcu eget, hendrerit varius purus. Curabitur eget sollicitudin dolor. Nullam in enim odio. Phasellus consectetur sed lacus a aliquet.
+            
+            Sed luctus libero massa, et ultricies nulla pharetra a. Aliquam erat volutpat. Nunc lacus nisi, pulvinar et suscipit at, vulputate non purus. Integer tincidunt tortor arcu, ac eleifend nunc consectetur non. Donec interdum velit porta lectus mollis, sit amet congue massa egestas. Sed euismod sagittis tellus, eu vulputate lectus consectetur vitae. Ut in tristique libero. Nullam eu elit non velit porta consectetur nec ut metus. Fusce fringilla nisl eu est accumsan, mattis accumsan metus condimentum. Pellentesque vel ultricies eros. Sed sodales, felis cursus eleifend hendrerit, dolor dolor pharetra ex, non malesuada lectus lectus vel diam. Phasellus id scelerisque ligula. Mauris lobortis ipsum eget neque pharetra, quis rutrum lacus elementum. Etiam facilisis tellus vel mattis pulvinar. Nunc congue, ligula ut interdum aliquet, leo nisi laoreet lorem, ut vulputate tellus elit vel quam. Cras in diam euismod, aliquam lacus eget, ullamcorper libero.
+            
+            Proin faucibus erat at tortor iaculis, a aliquet justo fermentum. Pellentesque mollis mi sit amet aliquet laoreet. Phasellus vitae mauris sed magna sollicitudin lacinia vel non diam. In ac facilisis metus. Ut ullamcorper id lacus vel ultricies. Suspendisse congue, justo eu varius blandit, nibh libero pulvinar nisl, eget auctor leo purus vehicula purus. Nulla gravida sem diam. Etiam consequat velit augue, quis iaculis urna tristique ut. Proin et ornare mi. Nam rhoncus, lacus in venenatis volutpat, leo tellus lobortis sapien, vitae molestie enim tortor et elit. Fusce dapibus rutrum mauris. Phasellus vestibulum molestie ante, ac faucibus quam dictum at. Nulla molestie nunc nibh. Maecenas non lacus eget tellus blandit dignissim et ac neque.
+            
+            Donec ut risus dapibus, mattis magna interdum, auctor quam. Proin efficitur pharetra commodo. In in lectus eget tortor porta scelerisque pretium vel nunc. In rutrum ornare massa, sed aliquet arcu. Integer ullamcorper est a blandit lacinia. Sed a justo rutrum, porttitor quam et, volutpat magna. Praesent magna erat, sollicitudin elementum nisi vitae, accumsan rhoncus enim. Morbi elementum enim at nisi convallis egestas. Aliquam eu consequat nulla. Nulla facilisi. Ut quis odio quis tortor molestie iaculis nec ac urna. Vestibulum aliquet magna in est consectetur, a maximus leo lacinia. Aliquam quis dui laoreet, tristique leo id, fermentum tortor. Mauris lobortis nec sapien a mollis.
+            
+            Praesent sed est ut turpis varius commodo dapibus eu risus. Duis bibendum magna augue, sodales blandit ligula viverra nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean imperdiet non purus et luctus. Donec lectus odio, ullamcorper vitae elementum vitae, ullamcorper non nibh. Maecenas nec vestibulum enim, eu consectetur sem. Nulla mauris est, mattis et tincidunt sit amet, interdum sit amet lacus. Integer augue nunc, vestibulum et mattis eget, accumsan eget tellus. Nunc bibendum, neque a rhoncus ultricies, justo orci efficitur enim, eu sodales erat tellus et nisi. Vestibulum mattis bibendum tincidunt.
+            
+            Donec hendrerit tempor purus non porta. Praesent euismod purus nec eros hendrerit, non sagittis libero varius. Aliquam dapibus, turpis quis elementum fermentum, velit ex venenatis leo, et vehicula odio ante ac urna. Mauris varius urna at sem bibendum, ut molestie mauris molestie. Nulla vulputate sem eget urna elementum vestibulum. Suspendisse venenatis nisi non dolor pulvinar, sed sodales massa pellentesque. Suspendisse tincidunt massa a elit dictum, vitae faucibus diam dictum. Maecenas maximus commodo metus hendrerit viverra. Nunc aliquet ac urna at tincidunt. Curabitur mi nulla, rhoncus tempor sollicitudin id, molestie a tellus. Nam at faucibus urna, nec fringilla justo. Ut non viverra urna. Sed in ornare sem, non mattis diam. In nec elit tincidunt, luctus sem eu, viverra tellus. Maecenas elementum nunc urna, ac placerat erat vehicula a. In hac habitasse platea dictumst.
+            
+            Nullam tincidunt justo finibus porta pulvinar. Duis pulvinar blandit tortor quis fermentum. Quisque lectus risus, elementum at varius sed, pulvinar ac turpis. Pellentesque vel posuere risus, et aliquet enim. In vitae turpis egestas, lobortis quam ac, fringilla enim. Cras dignissim enim eu nunc dictum, vitae tincidunt est semper. In eget quam at eros porta tempor. Fusce at nibh ipsum. Sed lacinia quam et mi imperdiet accumsan.</p></div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                Back
+              </button>
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#wizard">
+                Next Step
+              </button>
+            </div>
+        </div>
+      </div>
+      </div>
+      <!--End M2-->
+
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

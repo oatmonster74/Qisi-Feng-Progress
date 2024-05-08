@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS Objects and JSON</title>
+    <script type="text/javascript">
+      // initialize a new object and store it as a variable named customer
+      const customer = {
+        name: 'Anthony',
+        age: 23,
+        married: false,
+        pets: ['dog', 'cat', 'iguana'],
+        siblings: [
+          {name: 'Mary', age: 32, married: true},
+          {name: 'Billy', age: 16, married: false},
+        ],
+      }
+
+      //OPPOSITE BROTHERS-------------------------------------------------------------
+
+      const customerJSON= JSON.stringify(customer) //MAKE JS OBJECT into JSON
+      console.log(customerJSON)
+
+      const customerObejct=JSON.parse(customerJSON) //MAKE JSON into JS OBJECT
+      console.log(customerObejct)
+
+
+      //--------------------------------------------------------------------------------------
+
+
+            //reassign
+            //customer.name="Abby"
+            //customer.eyeColor='Green'
+
+            //customer.pets.push('chickeń')
+            //console.log(customer)
+
+            //Mary's pets[]
+            //customer.siblings[0].pets=['spider','snail']
+
+            //console.log(customer.pets.length)
+
+        async function logApiResults(){
+          //await= Dear Javascript, please chill out and wait for this promise to be resolved.
+          //aka don't execute past this line until response has a proper value not just an IOU
+
+        const response= await fetch( "https://rickandmortyapi.com/api/episode/1") 
+          //return nothing for .3333 sec
+          //this is how MDN does it but .json returns a JS object from the JSON you called it on.
+        const myApiData = await response.json()
+        
+        const message =`${myApiData.name} is a ${myApiData.species} from ${myApiData.origin.name} and he is ${myApiData.status}`
+        console.log(message)
+        }
+
+        logApiResults()
+
+
+        async function logApiInQuotes(){
+
+        const InQuotes= await fetch( "https://api.quotable.io/quotes/random") 
+        
+        const myApiInQuotes = await InQuotes.json()
+        
+        const OutputInQuotes =`${myApiInQuotes.content} by ${myApiInQuotes.author} from ${myApiInQuotes.tags[1]}`
+
+        console.log(OutputInQuotes)
+        }
+
+        logApiInQuotes()
+
+        //const message=[Character Name] is a [species] from [origin] and he is [status]
+
+       
+
+
+
+      
+
+    </script>
+  </head>
+  <body></body>
+</html>

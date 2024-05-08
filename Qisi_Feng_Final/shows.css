@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+  } 
+
+.ext_shows_page_headingbox{
+    display: flex;
+    width: 100%;
+    height: 180px;
+    border: 1px solid black;
+    position: relative;
+    justify-content: left;
+    align-items: center;
+}
+
+.ext_shows_page_headingbox h1{
+    font-size: 5rem;
+    font-family: "Anton",sans-serif;
+    border-bottom: 10px solid black;
+}
+
+.ext_shows_page_gridbox{
+    display: grid;
+    grid-template-columns: repeat(3, calc(100vw / 3)); /* Three columns--each one-third of the viewport width */
+    grid-template-rows: repeat(4, auto);
+    height: 300px;
+    position: relative;
+}
+
+.ext_shows_page_gridcompos img{
+    width: 100%; 
+    height: 500px; 
+    /* border: 1px solid black; */
+    object-fit: contain;
+}
+
+.ext_shows_page_gridcompos{
+    position: relative;
+}
+
+.brands{
+    position: absolute;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Anton",sans-serif;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    bottom: 50%;
+    right: 50%;
+}
+
+.ext_shows_page_gridcompos:hover .brands {
+    opacity: 1; 
+}
+
+.ext_shows_page_gridcompos img:hover{
+    opacity: 0.6;
+}
